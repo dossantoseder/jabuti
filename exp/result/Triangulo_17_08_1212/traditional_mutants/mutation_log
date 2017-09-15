@@ -1,0 +1,861 @@
+AORB_1:18:int_triangulo(int,int,int):b + c => b * c
+AORB_2:18:int_triangulo(int,int,int):b + c => b / c
+AORB_3:18:int_triangulo(int,int,int):b + c => b % c
+AORB_4:18:int_triangulo(int,int,int):b + c => b - c
+AORB_5:18:int_triangulo(int,int,int):a + c => a * c
+AORB_6:18:int_triangulo(int,int,int):a + c => a / c
+AORB_7:18:int_triangulo(int,int,int):a + c => a % c
+AORB_8:18:int_triangulo(int,int,int):a + c => a - c
+AORB_9:18:int_triangulo(int,int,int):a + b => a * b
+AORB_10:18:int_triangulo(int,int,int):a + b => a / b
+AORB_11:18:int_triangulo(int,int,int):a + b => a % b
+AORB_12:18:int_triangulo(int,int,int):a + b => a - b
+AORB_13:20:int_triangulo(int,int,int):a * a => a / a
+AORB_14:20:int_triangulo(int,int,int):a * a => a % a
+AORB_15:20:int_triangulo(int,int,int):a * a => a + a
+AORB_16:20:int_triangulo(int,int,int):a * a => a - a
+AORB_17:21:int_triangulo(int,int,int):b * b => b / b
+AORB_18:21:int_triangulo(int,int,int):b * b => b % b
+AORB_19:21:int_triangulo(int,int,int):b * b => b + b
+AORB_20:21:int_triangulo(int,int,int):b * b => b - b
+AORB_21:22:int_triangulo(int,int,int):c * c => c / c
+AORB_22:22:int_triangulo(int,int,int):c * c => c % c
+AORB_23:22:int_triangulo(int,int,int):c * c => c + c
+AORB_24:22:int_triangulo(int,int,int):c * c => c - c
+AORB_25:23:int_triangulo(int,int,int):bs + cs => bs * cs
+AORB_26:23:int_triangulo(int,int,int):bs + cs => bs / cs
+AORB_27:23:int_triangulo(int,int,int):bs + cs => bs % cs
+AORB_28:23:int_triangulo(int,int,int):bs + cs => bs - cs
+AORB_29:25:int_triangulo(int,int,int):b * c => b / c
+AORB_30:25:int_triangulo(int,int,int):b * c => b % c
+AORB_31:25:int_triangulo(int,int,int):b * c => b + c
+AORB_32:25:int_triangulo(int,int,int):b * c => b - c
+AORB_33:25:int_triangulo(int,int,int):b * c / 2 => b * c * 2
+AORB_34:25:int_triangulo(int,int,int):b * c / 2 => b * c % 2
+AORB_35:25:int_triangulo(int,int,int):b * c / 2 => b * c + 2
+AORB_36:25:int_triangulo(int,int,int):b * c / 2 => b * c - 2
+AORB_37:27:int_triangulo(int,int,int):a + b => a * b
+AORB_38:27:int_triangulo(int,int,int):a + b => a / b
+AORB_39:27:int_triangulo(int,int,int):a + b => a % b
+AORB_40:27:int_triangulo(int,int,int):a + b => a - b
+AORB_41:27:int_triangulo(int,int,int):a + b + c => (a + b) * c
+AORB_42:27:int_triangulo(int,int,int):a + b + c => (a + b) / c
+AORB_43:27:int_triangulo(int,int,int):a + b + c => (a + b) % c
+AORB_44:27:int_triangulo(int,int,int):a + b + c => a + b - c
+AORB_45:27:int_triangulo(int,int,int):(a + b + c) / 2 => (a + b + c) * 2
+AORB_46:27:int_triangulo(int,int,int):(a + b + c) / 2 => (a + b + c) % 2
+AORB_47:27:int_triangulo(int,int,int):(a + b + c) / 2 => a + b + c + 2
+AORB_48:27:int_triangulo(int,int,int):(a + b + c) / 2 => a + b + c - 2
+AORB_49:28:int_triangulo(int,int,int):s - a => s * a
+AORB_50:28:int_triangulo(int,int,int):s - a => s / a
+AORB_51:28:int_triangulo(int,int,int):s - a => s % a
+AORB_52:28:int_triangulo(int,int,int):s - a => s + a
+AORB_53:28:int_triangulo(int,int,int):s - b => s * b
+AORB_54:28:int_triangulo(int,int,int):s - b => s / b
+AORB_55:28:int_triangulo(int,int,int):s - b => s % b
+AORB_56:28:int_triangulo(int,int,int):s - b => s + b
+AORB_57:28:int_triangulo(int,int,int):s - c => s * c
+AORB_58:28:int_triangulo(int,int,int):s - c => s / c
+AORB_59:28:int_triangulo(int,int,int):s - c => s % c
+AORB_60:28:int_triangulo(int,int,int):s - c => s + c
+AORB_61:28:int_triangulo(int,int,int):(s - b) * (s - c) => (s - b) / (s - c)
+AORB_62:28:int_triangulo(int,int,int):(s - b) * (s - c) => (s - b) % (s - c)
+AORB_63:28:int_triangulo(int,int,int):(s - b) * (s - c) => s - b + (s - c)
+AORB_64:28:int_triangulo(int,int,int):(s - b) * (s - c) => s - b - (s - c)
+AORB_65:28:int_triangulo(int,int,int):(s - a) * ((s - b) * (s - c)) => (s - a) / ((s - b) * (s - c))
+AORB_66:28:int_triangulo(int,int,int):(s - a) * ((s - b) * (s - c)) => (s - a) % ((s - b) * (s - c))
+AORB_67:28:int_triangulo(int,int,int):(s - a) * ((s - b) * (s - c)) => s - a + (s - b) * (s - c)
+AORB_68:28:int_triangulo(int,int,int):(s - a) * ((s - b) * (s - c)) => s - a - (s - b) * (s - c)
+AORB_69:28:int_triangulo(int,int,int):s * ((s - a) * ((s - b) * (s - c))) => s / ((s - a) * ((s - b) * (s - c)))
+AORB_70:28:int_triangulo(int,int,int):s * ((s - a) * ((s - b) * (s - c))) => s % ((s - a) * ((s - b) * (s - c)))
+AORB_71:28:int_triangulo(int,int,int):s * ((s - a) * ((s - b) * (s - c))) => s + (s - a) * ((s - b) * (s - c))
+AORB_72:28:int_triangulo(int,int,int):s * ((s - a) * ((s - b) * (s - c))) => s - (s - a) * ((s - b) * (s - c))
+AORB_73:29:int_triangulo(int,int,int):bs + cs => bs * cs
+AORB_74:29:int_triangulo(int,int,int):bs + cs => bs / cs
+AORB_75:29:int_triangulo(int,int,int):bs + cs => bs % cs
+AORB_76:29:int_triangulo(int,int,int):bs + cs => bs - cs
+AORB_77:32:int_triangulo(int,int,int):bs + cs => bs * cs
+AORB_78:32:int_triangulo(int,int,int):bs + cs => bs / cs
+AORB_79:32:int_triangulo(int,int,int):bs + cs => bs % cs
+AORB_80:32:int_triangulo(int,int,int):bs + cs => bs - cs
+AORB_81:40:int_triangulo(int,int,int):a * a => a / a
+AORB_82:40:int_triangulo(int,int,int):a * a => a % a
+AORB_83:40:int_triangulo(int,int,int):a * a => a + a
+AORB_84:40:int_triangulo(int,int,int):a * a => a - a
+AORB_85:40:int_triangulo(int,int,int):a * a * Math.sqrt( 3 ) => a * a / Math.sqrt( 3 )
+AORB_86:40:int_triangulo(int,int,int):a * a * Math.sqrt( 3 ) => a * a % Math.sqrt( 3 )
+AORB_87:40:int_triangulo(int,int,int):a * a * Math.sqrt( 3 ) => a * a + Math.sqrt( 3 )
+AORB_88:40:int_triangulo(int,int,int):a * a * Math.sqrt( 3 ) => a * a - Math.sqrt( 3 )
+AORB_89:40:int_triangulo(int,int,int):a * a * Math.sqrt( 3 ) / 4 => a * a * Math.sqrt( 3 ) * 4
+AORB_90:40:int_triangulo(int,int,int):a * a * Math.sqrt( 3 ) / 4 => a * a * Math.sqrt( 3 ) % 4
+AORB_91:40:int_triangulo(int,int,int):a * a * Math.sqrt( 3 ) / 4 => a * a * Math.sqrt( 3 ) + 4
+AORB_92:40:int_triangulo(int,int,int):a * a * Math.sqrt( 3 ) / 4 => a * a * Math.sqrt( 3 ) - 4
+AORB_93:44:int_triangulo(int,int,int):a + b => a * b
+AORB_94:44:int_triangulo(int,int,int):a + b => a / b
+AORB_95:44:int_triangulo(int,int,int):a + b => a % b
+AORB_96:44:int_triangulo(int,int,int):a + b => a - b
+AORB_97:44:int_triangulo(int,int,int):c / 2 => c * 2
+AORB_98:44:int_triangulo(int,int,int):c / 2 => c % 2
+AORB_99:44:int_triangulo(int,int,int):c / 2 => c + 2
+AORB_100:44:int_triangulo(int,int,int):c / 2 => c - 2
+AORB_101:44:int_triangulo(int,int,int):a + b + c / 2 => (a + b) * (c / 2)
+AORB_102:44:int_triangulo(int,int,int):a + b + c / 2 => (a + b) / (c / 2)
+AORB_103:44:int_triangulo(int,int,int):a + b + c / 2 => (a + b) % (c / 2)
+AORB_104:44:int_triangulo(int,int,int):a + b + c / 2 => a + b - c / 2
+AORB_105:45:int_triangulo(int,int,int):s - a => s * a
+AORB_106:45:int_triangulo(int,int,int):s - a => s / a
+AORB_107:45:int_triangulo(int,int,int):s - a => s % a
+AORB_108:45:int_triangulo(int,int,int):s - a => s + a
+AORB_109:45:int_triangulo(int,int,int):s - b => s * b
+AORB_110:45:int_triangulo(int,int,int):s - b => s / b
+AORB_111:45:int_triangulo(int,int,int):s - b => s % b
+AORB_112:45:int_triangulo(int,int,int):s - b => s + b
+AORB_113:45:int_triangulo(int,int,int):s - c => s * c
+AORB_114:45:int_triangulo(int,int,int):s - c => s / c
+AORB_115:45:int_triangulo(int,int,int):s - c => s % c
+AORB_116:45:int_triangulo(int,int,int):s - c => s + c
+AORB_117:45:int_triangulo(int,int,int):(s - b) * (s - c) => (s - b) / (s - c)
+AORB_118:45:int_triangulo(int,int,int):(s - b) * (s - c) => (s - b) % (s - c)
+AORB_119:45:int_triangulo(int,int,int):(s - b) * (s - c) => s - b + (s - c)
+AORB_120:45:int_triangulo(int,int,int):(s - b) * (s - c) => s - b - (s - c)
+AORB_121:45:int_triangulo(int,int,int):(s - a) * ((s - b) * (s - c)) => (s - a) / ((s - b) * (s - c))
+AORB_122:45:int_triangulo(int,int,int):(s - a) * ((s - b) * (s - c)) => (s - a) % ((s - b) * (s - c))
+AORB_123:45:int_triangulo(int,int,int):(s - a) * ((s - b) * (s - c)) => s - a + (s - b) * (s - c)
+AORB_124:45:int_triangulo(int,int,int):(s - a) * ((s - b) * (s - c)) => s - a - (s - b) * (s - c)
+AORB_125:45:int_triangulo(int,int,int):s * ((s - a) * ((s - b) * (s - c))) => s / ((s - a) * ((s - b) * (s - c)))
+AORB_126:45:int_triangulo(int,int,int):s * ((s - a) * ((s - b) * (s - c))) => s % ((s - a) * ((s - b) * (s - c)))
+AORB_127:45:int_triangulo(int,int,int):s * ((s - a) * ((s - b) * (s - c))) => s + (s - a) * ((s - b) * (s - c))
+AORB_128:45:int_triangulo(int,int,int):s * ((s - a) * ((s - b) * (s - c))) => s - (s - a) * ((s - b) * (s - c))
+AODU_1:9:int_triangulo(int,int,int):-2 => 2
+AODU_2:16:int_triangulo(int,int,int):-1 => 1
+AOIU_1:20:int_triangulo(int,int,int):a => -a
+AOIU_2:21:int_triangulo(int,int,int):b => -b
+AOIU_3:22:int_triangulo(int,int,int):c => -c
+AOIU_4:25:int_triangulo(int,int,int):b => -b
+AOIU_5:27:int_triangulo(int,int,int):a => -a
+AOIU_6:28:int_triangulo(int,int,int):s => -s
+AOIU_7:28:int_triangulo(int,int,int):s => -s
+AOIU_8:28:int_triangulo(int,int,int):s => -s
+AOIU_9:28:int_triangulo(int,int,int):s => -s
+AOIU_10:40:int_triangulo(int,int,int):a => -a
+AOIU_11:44:int_triangulo(int,int,int):a => -a
+AOIU_12:45:int_triangulo(int,int,int):s => -s
+AOIU_13:45:int_triangulo(int,int,int):s => -s
+AOIU_14:45:int_triangulo(int,int,int):s => -s
+AOIU_15:45:int_triangulo(int,int,int):s => -s
+AOIU_16:54:int_triangulo(int,int,int):classe => -classe
+AOIS_1:15:int_triangulo(int,int,int):a => ++a
+AOIS_2:15:int_triangulo(int,int,int):a => --a
+AOIS_3:15:int_triangulo(int,int,int):a => a++
+AOIS_4:15:int_triangulo(int,int,int):a => a--
+AOIS_5:15:int_triangulo(int,int,int):b => ++b
+AOIS_6:15:int_triangulo(int,int,int):b => --b
+AOIS_7:15:int_triangulo(int,int,int):b => b++
+AOIS_8:15:int_triangulo(int,int,int):b => b--
+AOIS_9:15:int_triangulo(int,int,int):a => ++a
+AOIS_10:15:int_triangulo(int,int,int):a => --a
+AOIS_11:15:int_triangulo(int,int,int):a => a++
+AOIS_12:15:int_triangulo(int,int,int):a => a--
+AOIS_13:15:int_triangulo(int,int,int):c => ++c
+AOIS_14:15:int_triangulo(int,int,int):c => --c
+AOIS_15:15:int_triangulo(int,int,int):c => c++
+AOIS_16:15:int_triangulo(int,int,int):c => c--
+AOIS_17:15:int_triangulo(int,int,int):b => ++b
+AOIS_18:15:int_triangulo(int,int,int):b => --b
+AOIS_19:15:int_triangulo(int,int,int):b => b++
+AOIS_20:15:int_triangulo(int,int,int):b => b--
+AOIS_21:15:int_triangulo(int,int,int):c => ++c
+AOIS_22:15:int_triangulo(int,int,int):c => --c
+AOIS_23:15:int_triangulo(int,int,int):c => c++
+AOIS_24:15:int_triangulo(int,int,int):c => c--
+AOIS_25:18:int_triangulo(int,int,int):a => ++a
+AOIS_26:18:int_triangulo(int,int,int):a => --a
+AOIS_27:18:int_triangulo(int,int,int):a => a++
+AOIS_28:18:int_triangulo(int,int,int):a => a--
+AOIS_29:18:int_triangulo(int,int,int):b => ++b
+AOIS_30:18:int_triangulo(int,int,int):b => --b
+AOIS_31:18:int_triangulo(int,int,int):b => b++
+AOIS_32:18:int_triangulo(int,int,int):b => b--
+AOIS_33:18:int_triangulo(int,int,int):c => ++c
+AOIS_34:18:int_triangulo(int,int,int):c => --c
+AOIS_35:18:int_triangulo(int,int,int):c => c++
+AOIS_36:18:int_triangulo(int,int,int):c => c--
+AOIS_37:18:int_triangulo(int,int,int):b => ++b
+AOIS_38:18:int_triangulo(int,int,int):b => --b
+AOIS_39:18:int_triangulo(int,int,int):b => b++
+AOIS_40:18:int_triangulo(int,int,int):b => b--
+AOIS_41:18:int_triangulo(int,int,int):a => ++a
+AOIS_42:18:int_triangulo(int,int,int):a => --a
+AOIS_43:18:int_triangulo(int,int,int):a => a++
+AOIS_44:18:int_triangulo(int,int,int):a => a--
+AOIS_45:18:int_triangulo(int,int,int):c => ++c
+AOIS_46:18:int_triangulo(int,int,int):c => --c
+AOIS_47:18:int_triangulo(int,int,int):c => c++
+AOIS_48:18:int_triangulo(int,int,int):c => c--
+AOIS_49:18:int_triangulo(int,int,int):c => ++c
+AOIS_50:18:int_triangulo(int,int,int):c => --c
+AOIS_51:18:int_triangulo(int,int,int):c => c++
+AOIS_52:18:int_triangulo(int,int,int):c => c--
+AOIS_53:18:int_triangulo(int,int,int):a => ++a
+AOIS_54:18:int_triangulo(int,int,int):a => --a
+AOIS_55:18:int_triangulo(int,int,int):a => a++
+AOIS_56:18:int_triangulo(int,int,int):a => a--
+AOIS_57:18:int_triangulo(int,int,int):b => ++b
+AOIS_58:18:int_triangulo(int,int,int):b => --b
+AOIS_59:18:int_triangulo(int,int,int):b => b++
+AOIS_60:18:int_triangulo(int,int,int):b => b--
+AOIS_61:19:int_triangulo(int,int,int):a => ++a
+AOIS_62:19:int_triangulo(int,int,int):a => --a
+AOIS_63:19:int_triangulo(int,int,int):a => a++
+AOIS_64:19:int_triangulo(int,int,int):a => a--
+AOIS_65:19:int_triangulo(int,int,int):b => ++b
+AOIS_66:19:int_triangulo(int,int,int):b => --b
+AOIS_67:19:int_triangulo(int,int,int):b => b++
+AOIS_68:19:int_triangulo(int,int,int):b => b--
+AOIS_69:19:int_triangulo(int,int,int):b => ++b
+AOIS_70:19:int_triangulo(int,int,int):b => --b
+AOIS_71:19:int_triangulo(int,int,int):b => b++
+AOIS_72:19:int_triangulo(int,int,int):b => b--
+AOIS_73:19:int_triangulo(int,int,int):c => ++c
+AOIS_74:19:int_triangulo(int,int,int):c => --c
+AOIS_75:19:int_triangulo(int,int,int):c => c++
+AOIS_76:19:int_triangulo(int,int,int):c => c--
+AOIS_77:20:int_triangulo(int,int,int):a => ++a
+AOIS_78:20:int_triangulo(int,int,int):a => --a
+AOIS_79:20:int_triangulo(int,int,int):a => a++
+AOIS_80:20:int_triangulo(int,int,int):a => a--
+AOIS_81:20:int_triangulo(int,int,int):a => ++a
+AOIS_82:20:int_triangulo(int,int,int):a => --a
+AOIS_83:20:int_triangulo(int,int,int):a => a++
+AOIS_84:20:int_triangulo(int,int,int):a => a--
+AOIS_85:21:int_triangulo(int,int,int):b => ++b
+AOIS_86:21:int_triangulo(int,int,int):b => --b
+AOIS_87:21:int_triangulo(int,int,int):b => b++
+AOIS_88:21:int_triangulo(int,int,int):b => b--
+AOIS_89:21:int_triangulo(int,int,int):b => ++b
+AOIS_90:21:int_triangulo(int,int,int):b => --b
+AOIS_91:21:int_triangulo(int,int,int):b => b++
+AOIS_92:21:int_triangulo(int,int,int):b => b--
+AOIS_93:22:int_triangulo(int,int,int):c => ++c
+AOIS_94:22:int_triangulo(int,int,int):c => --c
+AOIS_95:22:int_triangulo(int,int,int):c => c++
+AOIS_96:22:int_triangulo(int,int,int):c => c--
+AOIS_97:22:int_triangulo(int,int,int):c => ++c
+AOIS_98:22:int_triangulo(int,int,int):c => --c
+AOIS_99:22:int_triangulo(int,int,int):c => c++
+AOIS_100:22:int_triangulo(int,int,int):c => c--
+AOIS_101:23:int_triangulo(int,int,int):as => ++as
+AOIS_102:23:int_triangulo(int,int,int):as => --as
+AOIS_103:23:int_triangulo(int,int,int):as => as++
+AOIS_104:23:int_triangulo(int,int,int):as => as--
+AOIS_105:23:int_triangulo(int,int,int):bs => ++bs
+AOIS_106:23:int_triangulo(int,int,int):bs => --bs
+AOIS_107:23:int_triangulo(int,int,int):bs => bs++
+AOIS_108:23:int_triangulo(int,int,int):bs => bs--
+AOIS_109:23:int_triangulo(int,int,int):cs => ++cs
+AOIS_110:23:int_triangulo(int,int,int):cs => --cs
+AOIS_111:23:int_triangulo(int,int,int):cs => cs++
+AOIS_112:23:int_triangulo(int,int,int):cs => cs--
+AOIS_113:25:int_triangulo(int,int,int):b => ++b
+AOIS_114:25:int_triangulo(int,int,int):b => --b
+AOIS_115:25:int_triangulo(int,int,int):b => b++
+AOIS_116:25:int_triangulo(int,int,int):b => b--
+AOIS_117:25:int_triangulo(int,int,int):c => ++c
+AOIS_118:25:int_triangulo(int,int,int):c => --c
+AOIS_119:25:int_triangulo(int,int,int):c => c++
+AOIS_120:25:int_triangulo(int,int,int):c => c--
+AOIS_121:27:int_triangulo(int,int,int):a => ++a
+AOIS_122:27:int_triangulo(int,int,int):a => --a
+AOIS_123:27:int_triangulo(int,int,int):a => a++
+AOIS_124:27:int_triangulo(int,int,int):a => a--
+AOIS_125:27:int_triangulo(int,int,int):b => ++b
+AOIS_126:27:int_triangulo(int,int,int):b => --b
+AOIS_127:27:int_triangulo(int,int,int):b => b++
+AOIS_128:27:int_triangulo(int,int,int):b => b--
+AOIS_129:27:int_triangulo(int,int,int):c => c++
+AOIS_130:27:int_triangulo(int,int,int):c => c--
+AOIS_131:28:int_triangulo(int,int,int):s => ++s
+AOIS_132:28:int_triangulo(int,int,int):s => --s
+AOIS_133:28:int_triangulo(int,int,int):s => s++
+AOIS_134:28:int_triangulo(int,int,int):s => s--
+AOIS_135:28:int_triangulo(int,int,int):s => ++s
+AOIS_136:28:int_triangulo(int,int,int):s => --s
+AOIS_137:28:int_triangulo(int,int,int):s => s++
+AOIS_138:28:int_triangulo(int,int,int):s => s--
+AOIS_139:28:int_triangulo(int,int,int):a => ++a
+AOIS_140:28:int_triangulo(int,int,int):a => --a
+AOIS_141:28:int_triangulo(int,int,int):a => a++
+AOIS_142:28:int_triangulo(int,int,int):a => a--
+AOIS_143:28:int_triangulo(int,int,int):s => ++s
+AOIS_144:28:int_triangulo(int,int,int):s => --s
+AOIS_145:28:int_triangulo(int,int,int):s => s++
+AOIS_146:28:int_triangulo(int,int,int):s => s--
+AOIS_147:28:int_triangulo(int,int,int):b => ++b
+AOIS_148:28:int_triangulo(int,int,int):b => --b
+AOIS_149:28:int_triangulo(int,int,int):b => b++
+AOIS_150:28:int_triangulo(int,int,int):b => b--
+AOIS_151:28:int_triangulo(int,int,int):s => ++s
+AOIS_152:28:int_triangulo(int,int,int):s => --s
+AOIS_153:28:int_triangulo(int,int,int):s => s++
+AOIS_154:28:int_triangulo(int,int,int):s => s--
+AOIS_155:28:int_triangulo(int,int,int):c => ++c
+AOIS_156:28:int_triangulo(int,int,int):c => --c
+AOIS_157:28:int_triangulo(int,int,int):c => c++
+AOIS_158:28:int_triangulo(int,int,int):c => c--
+AOIS_159:29:int_triangulo(int,int,int):as => ++as
+AOIS_160:29:int_triangulo(int,int,int):as => --as
+AOIS_161:29:int_triangulo(int,int,int):as => as++
+AOIS_162:29:int_triangulo(int,int,int):as => as--
+AOIS_163:29:int_triangulo(int,int,int):bs => ++bs
+AOIS_164:29:int_triangulo(int,int,int):bs => --bs
+AOIS_165:29:int_triangulo(int,int,int):bs => bs++
+AOIS_166:29:int_triangulo(int,int,int):bs => bs--
+AOIS_167:29:int_triangulo(int,int,int):cs => ++cs
+AOIS_168:29:int_triangulo(int,int,int):cs => --cs
+AOIS_169:29:int_triangulo(int,int,int):cs => cs++
+AOIS_170:29:int_triangulo(int,int,int):cs => cs--
+AOIS_171:32:int_triangulo(int,int,int):as => ++as
+AOIS_172:32:int_triangulo(int,int,int):as => --as
+AOIS_173:32:int_triangulo(int,int,int):as => as++
+AOIS_174:32:int_triangulo(int,int,int):as => as--
+AOIS_175:32:int_triangulo(int,int,int):bs => ++bs
+AOIS_176:32:int_triangulo(int,int,int):bs => --bs
+AOIS_177:32:int_triangulo(int,int,int):bs => bs++
+AOIS_178:32:int_triangulo(int,int,int):bs => bs--
+AOIS_179:32:int_triangulo(int,int,int):cs => ++cs
+AOIS_180:32:int_triangulo(int,int,int):cs => --cs
+AOIS_181:32:int_triangulo(int,int,int):cs => cs++
+AOIS_182:32:int_triangulo(int,int,int):cs => cs--
+AOIS_183:38:int_triangulo(int,int,int):a => ++a
+AOIS_184:38:int_triangulo(int,int,int):a => --a
+AOIS_185:38:int_triangulo(int,int,int):a => a++
+AOIS_186:38:int_triangulo(int,int,int):a => a--
+AOIS_187:38:int_triangulo(int,int,int):b => ++b
+AOIS_188:38:int_triangulo(int,int,int):b => --b
+AOIS_189:38:int_triangulo(int,int,int):b => b++
+AOIS_190:38:int_triangulo(int,int,int):b => b--
+AOIS_191:38:int_triangulo(int,int,int):b => ++b
+AOIS_192:38:int_triangulo(int,int,int):b => --b
+AOIS_193:38:int_triangulo(int,int,int):b => b++
+AOIS_194:38:int_triangulo(int,int,int):b => b--
+AOIS_195:38:int_triangulo(int,int,int):c => ++c
+AOIS_196:38:int_triangulo(int,int,int):c => --c
+AOIS_197:38:int_triangulo(int,int,int):c => c++
+AOIS_198:38:int_triangulo(int,int,int):c => c--
+AOIS_199:40:int_triangulo(int,int,int):a => ++a
+AOIS_200:40:int_triangulo(int,int,int):a => --a
+AOIS_201:40:int_triangulo(int,int,int):a => a++
+AOIS_202:40:int_triangulo(int,int,int):a => a--
+AOIS_203:40:int_triangulo(int,int,int):a => ++a
+AOIS_204:40:int_triangulo(int,int,int):a => --a
+AOIS_205:40:int_triangulo(int,int,int):a => a++
+AOIS_206:40:int_triangulo(int,int,int):a => a--
+AOIS_207:43:int_triangulo(int,int,int):a => ++a
+AOIS_208:43:int_triangulo(int,int,int):a => --a
+AOIS_209:43:int_triangulo(int,int,int):a => a++
+AOIS_210:43:int_triangulo(int,int,int):a => a--
+AOIS_211:43:int_triangulo(int,int,int):b => ++b
+AOIS_212:43:int_triangulo(int,int,int):b => --b
+AOIS_213:43:int_triangulo(int,int,int):b => b++
+AOIS_214:43:int_triangulo(int,int,int):b => b--
+AOIS_215:43:int_triangulo(int,int,int):a => ++a
+AOIS_216:43:int_triangulo(int,int,int):a => --a
+AOIS_217:43:int_triangulo(int,int,int):a => a++
+AOIS_218:43:int_triangulo(int,int,int):a => a--
+AOIS_219:43:int_triangulo(int,int,int):c => ++c
+AOIS_220:43:int_triangulo(int,int,int):c => --c
+AOIS_221:43:int_triangulo(int,int,int):c => c++
+AOIS_222:43:int_triangulo(int,int,int):c => c--
+AOIS_223:43:int_triangulo(int,int,int):b => ++b
+AOIS_224:43:int_triangulo(int,int,int):b => --b
+AOIS_225:43:int_triangulo(int,int,int):b => b++
+AOIS_226:43:int_triangulo(int,int,int):b => b--
+AOIS_227:43:int_triangulo(int,int,int):c => ++c
+AOIS_228:43:int_triangulo(int,int,int):c => --c
+AOIS_229:43:int_triangulo(int,int,int):c => c++
+AOIS_230:43:int_triangulo(int,int,int):c => c--
+AOIS_231:44:int_triangulo(int,int,int):a => ++a
+AOIS_232:44:int_triangulo(int,int,int):a => --a
+AOIS_233:44:int_triangulo(int,int,int):a => a++
+AOIS_234:44:int_triangulo(int,int,int):a => a--
+AOIS_235:44:int_triangulo(int,int,int):b => ++b
+AOIS_236:44:int_triangulo(int,int,int):b => --b
+AOIS_237:44:int_triangulo(int,int,int):b => b++
+AOIS_238:44:int_triangulo(int,int,int):b => b--
+AOIS_239:44:int_triangulo(int,int,int):c => ++c
+AOIS_240:44:int_triangulo(int,int,int):c => --c
+AOIS_241:44:int_triangulo(int,int,int):c => c++
+AOIS_242:44:int_triangulo(int,int,int):c => c--
+AOIS_243:45:int_triangulo(int,int,int):s => ++s
+AOIS_244:45:int_triangulo(int,int,int):s => --s
+AOIS_245:45:int_triangulo(int,int,int):s => s++
+AOIS_246:45:int_triangulo(int,int,int):s => s--
+AOIS_247:45:int_triangulo(int,int,int):s => ++s
+AOIS_248:45:int_triangulo(int,int,int):s => --s
+AOIS_249:45:int_triangulo(int,int,int):s => s++
+AOIS_250:45:int_triangulo(int,int,int):s => s--
+AOIS_251:45:int_triangulo(int,int,int):a => ++a
+AOIS_252:45:int_triangulo(int,int,int):a => --a
+AOIS_253:45:int_triangulo(int,int,int):a => a++
+AOIS_254:45:int_triangulo(int,int,int):a => a--
+AOIS_255:45:int_triangulo(int,int,int):s => ++s
+AOIS_256:45:int_triangulo(int,int,int):s => --s
+AOIS_257:45:int_triangulo(int,int,int):s => s++
+AOIS_258:45:int_triangulo(int,int,int):s => s--
+AOIS_259:45:int_triangulo(int,int,int):b => ++b
+AOIS_260:45:int_triangulo(int,int,int):b => --b
+AOIS_261:45:int_triangulo(int,int,int):b => b++
+AOIS_262:45:int_triangulo(int,int,int):b => b--
+AOIS_263:45:int_triangulo(int,int,int):s => ++s
+AOIS_264:45:int_triangulo(int,int,int):s => --s
+AOIS_265:45:int_triangulo(int,int,int):s => s++
+AOIS_266:45:int_triangulo(int,int,int):s => s--
+AOIS_267:45:int_triangulo(int,int,int):c => ++c
+AOIS_268:45:int_triangulo(int,int,int):c => --c
+AOIS_269:45:int_triangulo(int,int,int):c => c++
+AOIS_270:45:int_triangulo(int,int,int):c => c--
+AOIS_271:54:int_triangulo(int,int,int):classe => classe++
+AOIS_272:54:int_triangulo(int,int,int):classe => classe--
+ROR_1:15:int_triangulo(int,int,int): a < b  =>   a > b
+ROR_2:15:int_triangulo(int,int,int): a < b  =>   a >= b
+ROR_3:15:int_triangulo(int,int,int): a < b  =>   a <= b
+ROR_4:15:int_triangulo(int,int,int): a < b  =>   a == b
+ROR_5:15:int_triangulo(int,int,int): a < b  =>   a != b
+ROR_6:15:int_triangulo(int,int,int): a < b  =>   true
+ROR_7:15:int_triangulo(int,int,int): a < b  =>   false
+ROR_8:15:int_triangulo(int,int,int): a < c  =>   a > c
+ROR_9:15:int_triangulo(int,int,int): a < c  =>   a >= c
+ROR_10:15:int_triangulo(int,int,int): a < c  =>   a <= c
+ROR_11:15:int_triangulo(int,int,int): a < c  =>   a == c
+ROR_12:15:int_triangulo(int,int,int): a < c  =>   a != c
+ROR_13:15:int_triangulo(int,int,int): a < c  =>   true
+ROR_14:15:int_triangulo(int,int,int): a < c  =>   false
+ROR_15:15:int_triangulo(int,int,int): b < c  =>   b > c
+ROR_16:15:int_triangulo(int,int,int): b < c  =>   b >= c
+ROR_17:15:int_triangulo(int,int,int): b < c  =>   b <= c
+ROR_18:15:int_triangulo(int,int,int): b < c  =>   b == c
+ROR_19:15:int_triangulo(int,int,int): b < c  =>   b != c
+ROR_20:15:int_triangulo(int,int,int): b < c  =>   true
+ROR_21:15:int_triangulo(int,int,int): b < c  =>   false
+ROR_22:18:int_triangulo(int,int,int): a < b + c  =>   a > b + c
+ROR_23:18:int_triangulo(int,int,int): a < b + c  =>   a >= b + c
+ROR_24:18:int_triangulo(int,int,int): a < b + c  =>   a <= b + c
+ROR_25:18:int_triangulo(int,int,int): a < b + c  =>   a == b + c
+ROR_26:18:int_triangulo(int,int,int): a < b + c  =>   a != b + c
+ROR_27:18:int_triangulo(int,int,int): a < b + c  =>   true
+ROR_28:18:int_triangulo(int,int,int): a < b + c  =>   false
+ROR_29:18:int_triangulo(int,int,int): b < a + c  =>   b > a + c
+ROR_30:18:int_triangulo(int,int,int): b < a + c  =>   b >= a + c
+ROR_31:18:int_triangulo(int,int,int): b < a + c  =>   b <= a + c
+ROR_32:18:int_triangulo(int,int,int): b < a + c  =>   b == a + c
+ROR_33:18:int_triangulo(int,int,int): b < a + c  =>   b != a + c
+ROR_34:18:int_triangulo(int,int,int): b < a + c  =>   true
+ROR_35:18:int_triangulo(int,int,int): b < a + c  =>   false
+ROR_36:18:int_triangulo(int,int,int): c < a + b  =>   c > a + b
+ROR_37:18:int_triangulo(int,int,int): c < a + b  =>   c >= a + b
+ROR_38:18:int_triangulo(int,int,int): c < a + b  =>   c <= a + b
+ROR_39:18:int_triangulo(int,int,int): c < a + b  =>   c == a + b
+ROR_40:18:int_triangulo(int,int,int): c < a + b  =>   c != a + b
+ROR_41:18:int_triangulo(int,int,int): c < a + b  =>   true
+ROR_42:18:int_triangulo(int,int,int): c < a + b  =>   false
+ROR_43:19:int_triangulo(int,int,int): a != b  =>   a > b
+ROR_44:19:int_triangulo(int,int,int): a != b  =>   a >= b
+ROR_45:19:int_triangulo(int,int,int): a != b  =>   a < b
+ROR_46:19:int_triangulo(int,int,int): a != b  =>   a <= b
+ROR_47:19:int_triangulo(int,int,int): a != b  =>   a == b
+ROR_48:19:int_triangulo(int,int,int): a != b  =>   true
+ROR_49:19:int_triangulo(int,int,int): a != b  =>   false
+ROR_50:19:int_triangulo(int,int,int): b != c  =>   b > c
+ROR_51:19:int_triangulo(int,int,int): b != c  =>   b >= c
+ROR_52:19:int_triangulo(int,int,int): b != c  =>   b < c
+ROR_53:19:int_triangulo(int,int,int): b != c  =>   b <= c
+ROR_54:19:int_triangulo(int,int,int): b != c  =>   b == c
+ROR_55:19:int_triangulo(int,int,int): b != c  =>   true
+ROR_56:19:int_triangulo(int,int,int): b != c  =>   false
+ROR_57:23:int_triangulo(int,int,int): as == bs + cs  =>   as > bs + cs
+ROR_58:23:int_triangulo(int,int,int): as == bs + cs  =>   as >= bs + cs
+ROR_59:23:int_triangulo(int,int,int): as == bs + cs  =>   as < bs + cs
+ROR_60:23:int_triangulo(int,int,int): as == bs + cs  =>   as <= bs + cs
+ROR_61:23:int_triangulo(int,int,int): as == bs + cs  =>   as != bs + cs
+ROR_62:23:int_triangulo(int,int,int): as == bs + cs  =>   true
+ROR_63:23:int_triangulo(int,int,int): as == bs + cs  =>   false
+ROR_64:29:int_triangulo(int,int,int): as < bs + cs  =>   as > bs + cs
+ROR_65:29:int_triangulo(int,int,int): as < bs + cs  =>   as >= bs + cs
+ROR_66:29:int_triangulo(int,int,int): as < bs + cs  =>   as <= bs + cs
+ROR_67:29:int_triangulo(int,int,int): as < bs + cs  =>   as == bs + cs
+ROR_68:29:int_triangulo(int,int,int): as < bs + cs  =>   as != bs + cs
+ROR_69:29:int_triangulo(int,int,int): as < bs + cs  =>   true
+ROR_70:29:int_triangulo(int,int,int): as < bs + cs  =>   false
+ROR_71:32:int_triangulo(int,int,int): as > bs + cs  =>   as >= bs + cs
+ROR_72:32:int_triangulo(int,int,int): as > bs + cs  =>   as < bs + cs
+ROR_73:32:int_triangulo(int,int,int): as > bs + cs  =>   as <= bs + cs
+ROR_74:32:int_triangulo(int,int,int): as > bs + cs  =>   as == bs + cs
+ROR_75:32:int_triangulo(int,int,int): as > bs + cs  =>   as != bs + cs
+ROR_76:32:int_triangulo(int,int,int): as > bs + cs  =>   true
+ROR_77:32:int_triangulo(int,int,int): as > bs + cs  =>   false
+ROR_78:38:int_triangulo(int,int,int): a == b  =>   a > b
+ROR_79:38:int_triangulo(int,int,int): a == b  =>   a >= b
+ROR_80:38:int_triangulo(int,int,int): a == b  =>   a < b
+ROR_81:38:int_triangulo(int,int,int): a == b  =>   a <= b
+ROR_82:38:int_triangulo(int,int,int): a == b  =>   a != b
+ROR_83:38:int_triangulo(int,int,int): a == b  =>   true
+ROR_84:38:int_triangulo(int,int,int): a == b  =>   false
+ROR_85:38:int_triangulo(int,int,int): b == c  =>   b > c
+ROR_86:38:int_triangulo(int,int,int): b == c  =>   b >= c
+ROR_87:38:int_triangulo(int,int,int): b == c  =>   b < c
+ROR_88:38:int_triangulo(int,int,int): b == c  =>   b <= c
+ROR_89:38:int_triangulo(int,int,int): b == c  =>   b != c
+ROR_90:38:int_triangulo(int,int,int): b == c  =>   true
+ROR_91:38:int_triangulo(int,int,int): b == c  =>   false
+ROR_92:43:int_triangulo(int,int,int): a == b  =>   a > b
+ROR_93:43:int_triangulo(int,int,int): a == b  =>   a >= b
+ROR_94:43:int_triangulo(int,int,int): a == b  =>   a < b
+ROR_95:43:int_triangulo(int,int,int): a == b  =>   a <= b
+ROR_96:43:int_triangulo(int,int,int): a == b  =>   a != b
+ROR_97:43:int_triangulo(int,int,int): a == b  =>   true
+ROR_98:43:int_triangulo(int,int,int): a == b  =>   false
+ROR_99:43:int_triangulo(int,int,int): a == c  =>   a > c
+ROR_100:43:int_triangulo(int,int,int): a == c  =>   a >= c
+ROR_101:43:int_triangulo(int,int,int): a == c  =>   a < c
+ROR_102:43:int_triangulo(int,int,int): a == c  =>   a <= c
+ROR_103:43:int_triangulo(int,int,int): a == c  =>   a != c
+ROR_104:43:int_triangulo(int,int,int): a == c  =>   true
+ROR_105:43:int_triangulo(int,int,int): a == c  =>   false
+ROR_106:43:int_triangulo(int,int,int): b == c  =>   b > c
+ROR_107:43:int_triangulo(int,int,int): b == c  =>   b >= c
+ROR_108:43:int_triangulo(int,int,int): b == c  =>   b < c
+ROR_109:43:int_triangulo(int,int,int): b == c  =>   b <= c
+ROR_110:43:int_triangulo(int,int,int): b == c  =>   b != c
+ROR_111:43:int_triangulo(int,int,int): b == c  =>   true
+ROR_112:43:int_triangulo(int,int,int): b == c  =>   false
+COR_1:15:int_triangulo(int,int,int): a < b || a < c  =>   a < b && a < c
+COR_2:15:int_triangulo(int,int,int): a < b || a < c  =>   a < b ^ a < c
+COR_3:15:int_triangulo(int,int,int): a < b || a < c || b < c  =>   (a < b || a < c) && b < c
+COR_4:15:int_triangulo(int,int,int): a < b || a < c || b < c  =>   (a < b || a < c) ^ b < c
+COR_5:18:int_triangulo(int,int,int): a < b + c && b < a + c  =>   a < b + c || b < a + c
+COR_6:18:int_triangulo(int,int,int): a < b + c && b < a + c  =>   a < b + c ^ b < a + c
+COR_7:18:int_triangulo(int,int,int): a < b + c && b < a + c && c < a + b  =>   a < b + c && b < a + c || c < a + b
+COR_8:18:int_triangulo(int,int,int): a < b + c && b < a + c && c < a + b  =>   (a < b + c && b < a + c) ^ c < a + b
+COR_9:19:int_triangulo(int,int,int): a != b && b != c  =>   a != b || b != c
+COR_10:19:int_triangulo(int,int,int): a != b && b != c  =>   a != b ^ b != c
+COR_11:38:int_triangulo(int,int,int): a == b && b == c  =>   a == b || b == c
+COR_12:38:int_triangulo(int,int,int): a == b && b == c  =>   a == b ^ b == c
+COR_13:43:int_triangulo(int,int,int): a == b || a == c  =>   a == b && a == c
+COR_14:43:int_triangulo(int,int,int): a == b || a == c  =>   a == b ^ a == c
+COR_15:43:int_triangulo(int,int,int): a == b || a == c || b == c  =>   (a == b || a == c) && b == c
+COR_16:43:int_triangulo(int,int,int): a == b || a == c || b == c  =>   (a == b || a == c) ^ b == c
+COI_1:15:int_triangulo(int,int,int): a < b  =>  !(a < b)
+COI_2:15:int_triangulo(int,int,int): a < c  =>  !(a < c)
+COI_3:15:int_triangulo(int,int,int): a < b || a < c  =>  !(a < b || a < c)
+COI_4:15:int_triangulo(int,int,int): b < c  =>  !(b < c)
+COI_5:15:int_triangulo(int,int,int): a < b || a < c || b < c  =>  !(a < b || a < c || b < c)
+COI_6:18:int_triangulo(int,int,int): a < b + c  =>  !(a < b + c)
+COI_7:18:int_triangulo(int,int,int): b < a + c  =>  !(b < a + c)
+COI_8:18:int_triangulo(int,int,int): a < b + c && b < a + c  =>  !(a < b + c && b < a + c)
+COI_9:18:int_triangulo(int,int,int): c < a + b  =>  !(c < a + b)
+COI_10:18:int_triangulo(int,int,int): a < b + c && b < a + c && c < a + b  =>  !(a < b + c && b < a + c && c < a + b)
+COI_11:19:int_triangulo(int,int,int): a != b  =>  !(a != b)
+COI_12:19:int_triangulo(int,int,int): b != c  =>  !(b != c)
+COI_13:19:int_triangulo(int,int,int): a != b && b != c  =>  !(a != b && b != c)
+COI_14:23:int_triangulo(int,int,int): as == bs + cs  =>  !(as == bs + cs)
+COI_15:29:int_triangulo(int,int,int): as < bs + cs  =>  !(as < bs + cs)
+COI_16:32:int_triangulo(int,int,int): as > bs + cs  =>  !(as > bs + cs)
+COI_17:38:int_triangulo(int,int,int): a == b  =>  !(a == b)
+COI_18:38:int_triangulo(int,int,int): b == c  =>  !(b == c)
+COI_19:38:int_triangulo(int,int,int): a == b && b == c  =>  !(a == b && b == c)
+COI_20:43:int_triangulo(int,int,int): a == b  =>  !(a == b)
+COI_21:43:int_triangulo(int,int,int): a == c  =>  !(a == c)
+COI_22:43:int_triangulo(int,int,int): a == b || a == c  =>  !(a == b || a == c)
+COI_23:43:int_triangulo(int,int,int): b == c  =>  !(b == c)
+COI_24:43:int_triangulo(int,int,int): a == b || a == c || b == c  =>  !(a == b || a == c || b == c)
+LOI_1:15:int_triangulo(int,int,int):a => ~a
+LOI_2:15:int_triangulo(int,int,int):b => ~b
+LOI_3:15:int_triangulo(int,int,int):a => ~a
+LOI_4:15:int_triangulo(int,int,int):c => ~c
+LOI_5:15:int_triangulo(int,int,int):b => ~b
+LOI_6:15:int_triangulo(int,int,int):c => ~c
+LOI_7:18:int_triangulo(int,int,int):a => ~a
+LOI_8:18:int_triangulo(int,int,int):b => ~b
+LOI_9:18:int_triangulo(int,int,int):c => ~c
+LOI_10:18:int_triangulo(int,int,int):b => ~b
+LOI_11:18:int_triangulo(int,int,int):a => ~a
+LOI_12:18:int_triangulo(int,int,int):c => ~c
+LOI_13:18:int_triangulo(int,int,int):c => ~c
+LOI_14:18:int_triangulo(int,int,int):a => ~a
+LOI_15:18:int_triangulo(int,int,int):b => ~b
+LOI_16:19:int_triangulo(int,int,int):a => ~a
+LOI_17:19:int_triangulo(int,int,int):b => ~b
+LOI_18:19:int_triangulo(int,int,int):b => ~b
+LOI_19:19:int_triangulo(int,int,int):c => ~c
+LOI_20:20:int_triangulo(int,int,int):a => ~a
+LOI_21:20:int_triangulo(int,int,int):a => ~a
+LOI_22:21:int_triangulo(int,int,int):b => ~b
+LOI_23:21:int_triangulo(int,int,int):b => ~b
+LOI_24:22:int_triangulo(int,int,int):c => ~c
+LOI_25:22:int_triangulo(int,int,int):c => ~c
+LOI_26:23:int_triangulo(int,int,int):as => ~as
+LOI_27:23:int_triangulo(int,int,int):bs => ~bs
+LOI_28:23:int_triangulo(int,int,int):cs => ~cs
+LOI_29:25:int_triangulo(int,int,int):b => ~b
+LOI_30:25:int_triangulo(int,int,int):c => ~c
+LOI_31:27:int_triangulo(int,int,int):a => ~a
+LOI_32:27:int_triangulo(int,int,int):b => ~b
+LOI_33:27:int_triangulo(int,int,int):c => ~c
+LOI_34:28:int_triangulo(int,int,int):s => ~s
+LOI_35:28:int_triangulo(int,int,int):s => ~s
+LOI_36:28:int_triangulo(int,int,int):a => ~a
+LOI_37:28:int_triangulo(int,int,int):s => ~s
+LOI_38:28:int_triangulo(int,int,int):b => ~b
+LOI_39:28:int_triangulo(int,int,int):s => ~s
+LOI_40:28:int_triangulo(int,int,int):c => ~c
+LOI_41:29:int_triangulo(int,int,int):as => ~as
+LOI_42:29:int_triangulo(int,int,int):bs => ~bs
+LOI_43:29:int_triangulo(int,int,int):cs => ~cs
+LOI_44:32:int_triangulo(int,int,int):as => ~as
+LOI_45:32:int_triangulo(int,int,int):bs => ~bs
+LOI_46:32:int_triangulo(int,int,int):cs => ~cs
+LOI_47:38:int_triangulo(int,int,int):a => ~a
+LOI_48:38:int_triangulo(int,int,int):b => ~b
+LOI_49:38:int_triangulo(int,int,int):b => ~b
+LOI_50:38:int_triangulo(int,int,int):c => ~c
+LOI_51:40:int_triangulo(int,int,int):a => ~a
+LOI_52:40:int_triangulo(int,int,int):a => ~a
+LOI_53:43:int_triangulo(int,int,int):a => ~a
+LOI_54:43:int_triangulo(int,int,int):b => ~b
+LOI_55:43:int_triangulo(int,int,int):a => ~a
+LOI_56:43:int_triangulo(int,int,int):c => ~c
+LOI_57:43:int_triangulo(int,int,int):b => ~b
+LOI_58:43:int_triangulo(int,int,int):c => ~c
+LOI_59:44:int_triangulo(int,int,int):a => ~a
+LOI_60:44:int_triangulo(int,int,int):b => ~b
+LOI_61:44:int_triangulo(int,int,int):c => ~c
+LOI_62:45:int_triangulo(int,int,int):s => ~s
+LOI_63:45:int_triangulo(int,int,int):s => ~s
+LOI_64:45:int_triangulo(int,int,int):a => ~a
+LOI_65:45:int_triangulo(int,int,int):s => ~s
+LOI_66:45:int_triangulo(int,int,int):b => ~b
+LOI_67:45:int_triangulo(int,int,int):s => ~s
+LOI_68:45:int_triangulo(int,int,int):c => ~c
+LOI_69:54:int_triangulo(int,int,int):classe => ~classe
+SDL_1:16:int_triangulo(int,int,int): int classe = -2; double area; double as; double bs; double cs; double s; if (a < b || a < c || b < c) {     classe = -1; } else {     if (a < b + c && b < a + c && c < a + b) {         if (a != b && b != c) {             as = a * a;             bs = b * b;             cs = c * c;             if (as == bs + cs) {                 classe = 3;                 area = b * c / 2;             } else {                 s = (a + b + c) / 2;                 area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );                 if (as < bs + cs) {                     classe = 4;                 } else {                     if (as > bs + cs) {                         classe = 5;                     }                 }             }         } else {             if (a == b && b == c) {                 classe = 1;                 area = a * a * Math.sqrt( 3 ) / 4;             } else {                 classe = 2;                 if (a == b || a == c || b == c) {                     s = a + b + c / 2;                     area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );                 }             }         }     } else {         classe = 0;         area = 0;     } } return classe;  =>   int classe = -2; double area; double as; double bs; double cs; double s; return classe;
+SDL_2:16:int_triangulo(int,int,int): classe = -1;  =>  
+SDL_3:54:int_triangulo(int,int,int): if (a < b || a < c || b < c) {     classe = -1; } else {     if (a < b + c && b < a + c && c < a + b) {         if (a != b && b != c) {             as = a * a;             bs = b * b;             cs = c * c;             if (as == bs + cs) {                 classe = 3;                 area = b * c / 2;             } else {                 s = (a + b + c) / 2;                 area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );                 if (as < bs + cs) {                     classe = 4;                 } else {                     if (as > bs + cs) {                         classe = 5;                     }                 }             }         } else {             if (a == b && b == c) {                 classe = 1;                 area = a * a * Math.sqrt( 3 ) / 4;             } else {                 classe = 2;                 if (a == b || a == c || b == c) {                     s = a + b + c / 2;                     area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );                 }             }         }     } else {         classe = 0;         area = 0;     } }  =>   if (true) {     classe = -1; } else {     if (a < b + c && b < a + c && c < a + b) {         if (a != b && b != c) {             as = a * a;             bs = b * b;             cs = c * c;             if (as == bs + cs) {                 classe = 3;                 area = b * c / 2;             } else {                 s = (a + b + c) / 2;                 area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );                 if (as < bs + cs) {                     classe = 4;                 } else {                     if (as > bs + cs) {                         classe = 5;                     }                 }             }         } else {             if (a == b && b == c) {                 classe = 1;                 area = a * a * Math.sqrt( 3 ) / 4;             } else {                 classe = 2;                 if (a == b || a == c || b == c) {                     s = a + b + c / 2;                     area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );                 }             }         }     } else {         classe = 0;         area = 0;     } }
+SDL_4:18:int_triangulo(int,int,int): if (a < b + c && b < a + c && c < a + b) {     if (a != b && b != c) {         as = a * a;         bs = b * b;         cs = c * c;         if (as == bs + cs) {             classe = 3;             area = b * c / 2;         } else {             s = (a + b + c) / 2;             area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );             if (as < bs + cs) {                 classe = 4;             } else {                 if (as > bs + cs) {                     classe = 5;                 }             }         }     } else {         if (a == b && b == c) {             classe = 1;             area = a * a * Math.sqrt( 3 ) / 4;         } else {             classe = 2;             if (a == b || a == c || b == c) {                 s = a + b + c / 2;                 area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );             }         }     } } else {     classe = 0;     area = 0; }  =>  
+SDL_5:19:int_triangulo(int,int,int): if (a != b && b != c) {     as = a * a;     bs = b * b;     cs = c * c;     if (as == bs + cs) {         classe = 3;         area = b * c / 2;     } else {         s = (a + b + c) / 2;         area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );         if (as < bs + cs) {             classe = 4;         } else {             if (as > bs + cs) {                 classe = 5;             }         }     } } else {     if (a == b && b == c) {         classe = 1;         area = a * a * Math.sqrt( 3 ) / 4;     } else {         classe = 2;         if (a == b || a == c || b == c) {             s = a + b + c / 2;             area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );         }     } }  =>  
+SDL_6:53:int_triangulo(int,int,int): if (a < b + c && b < a + c && c < a + b) {     if (a != b && b != c) {         as = a * a;         bs = b * b;         cs = c * c;         if (as == bs + cs) {             classe = 3;             area = b * c / 2;         } else {             s = (a + b + c) / 2;             area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );             if (as < bs + cs) {                 classe = 4;             } else {                 if (as > bs + cs) {                     classe = 5;                 }             }         }     } else {         if (a == b && b == c) {             classe = 1;             area = a * a * Math.sqrt( 3 ) / 4;         } else {             classe = 2;             if (a == b || a == c || b == c) {                 s = a + b + c / 2;                 area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );             }         }     } } else {     classe = 0;     area = 0; }  =>   if (true) {     if (a != b && b != c) {         as = a * a;         bs = b * b;         cs = c * c;         if (as == bs + cs) {             classe = 3;             area = b * c / 2;         } else {             s = (a + b + c) / 2;             area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );             if (as < bs + cs) {                 classe = 4;             } else {                 if (as > bs + cs) {                     classe = 5;                 }             }         }     } else {         if (a == b && b == c) {             classe = 1;             area = a * a * Math.sqrt( 3 ) / 4;         } else {             classe = 2;             if (a == b || a == c || b == c) {                 s = a + b + c / 2;                 area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );             }         }     } } else {     classe = 0;     area = 0; }
+SDL_7:51:int_triangulo(int,int,int): classe = 0; area = 0;  =>   area = 0;
+SDL_8:51:int_triangulo(int,int,int): classe = 0; area = 0;  =>   classe = 0;
+SDL_9:36:int_triangulo(int,int,int): as = a * a; bs = b * b; cs = c * c; if (as == bs + cs) {     classe = 3;     area = b * c / 2; } else {     s = (a + b + c) / 2;     area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );     if (as < bs + cs) {         classe = 4;     } else {         if (as > bs + cs) {             classe = 5;         }     } }  =>   bs = b * b; cs = c * c; if (as == bs + cs) {     classe = 3;     area = b * c / 2; } else {     s = (a + b + c) / 2;     area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );     if (as < bs + cs) {         classe = 4;     } else {         if (as > bs + cs) {             classe = 5;         }     } }
+SDL_10:36:int_triangulo(int,int,int): as = a * a; bs = b * b; cs = c * c; if (as == bs + cs) {     classe = 3;     area = b * c / 2; } else {     s = (a + b + c) / 2;     area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );     if (as < bs + cs) {         classe = 4;     } else {         if (as > bs + cs) {             classe = 5;         }     } }  =>   as = a * a; cs = c * c; if (as == bs + cs) {     classe = 3;     area = b * c / 2; } else {     s = (a + b + c) / 2;     area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );     if (as < bs + cs) {         classe = 4;     } else {         if (as > bs + cs) {             classe = 5;         }     } }
+SDL_11:36:int_triangulo(int,int,int): as = a * a; bs = b * b; cs = c * c; if (as == bs + cs) {     classe = 3;     area = b * c / 2; } else {     s = (a + b + c) / 2;     area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );     if (as < bs + cs) {         classe = 4;     } else {         if (as > bs + cs) {             classe = 5;         }     } }  =>   as = a * a; bs = b * b; if (as == bs + cs) {     classe = 3;     area = b * c / 2; } else {     s = (a + b + c) / 2;     area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );     if (as < bs + cs) {         classe = 4;     } else {         if (as > bs + cs) {             classe = 5;         }     } }
+SDL_12:23:int_triangulo(int,int,int): as = a * a; bs = b * b; cs = c * c; if (as == bs + cs) {     classe = 3;     area = b * c / 2; } else {     s = (a + b + c) / 2;     area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );     if (as < bs + cs) {         classe = 4;     } else {         if (as > bs + cs) {             classe = 5;         }     } }  =>   as = a * a; bs = b * b; cs = c * c;
+SDL_13:49:int_triangulo(int,int,int): if (a != b && b != c) {     as = a * a;     bs = b * b;     cs = c * c;     if (as == bs + cs) {         classe = 3;         area = b * c / 2;     } else {         s = (a + b + c) / 2;         area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );         if (as < bs + cs) {             classe = 4;         } else {             if (as > bs + cs) {                 classe = 5;             }         }     } } else {     if (a == b && b == c) {         classe = 1;         area = a * a * Math.sqrt( 3 ) / 4;     } else {         classe = 2;         if (a == b || a == c || b == c) {             s = a + b + c / 2;             area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );         }     } }  =>   if (true) {     as = a * a;     bs = b * b;     cs = c * c;     if (as == bs + cs) {         classe = 3;         area = b * c / 2;     } else {         s = (a + b + c) / 2;         area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );         if (as < bs + cs) {             classe = 4;         } else {             if (as > bs + cs) {                 classe = 5;             }         }     } } else {     if (a == b && b == c) {         classe = 1;         area = a * a * Math.sqrt( 3 ) / 4;     } else {         classe = 2;         if (a == b || a == c || b == c) {             s = a + b + c / 2;             area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );         }     } }
+SDL_14:38:int_triangulo(int,int,int): if (a == b && b == c) {     classe = 1;     area = a * a * Math.sqrt( 3 ) / 4; } else {     classe = 2;     if (a == b || a == c || b == c) {         s = a + b + c / 2;         area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );     } }  =>  
+SDL_15:25:int_triangulo(int,int,int): classe = 3; area = b * c / 2;  =>   area = b * c / 2;
+SDL_16:25:int_triangulo(int,int,int): classe = 3; area = b * c / 2;  =>   classe = 3;
+SDL_17:37:int_triangulo(int,int,int): if (as == bs + cs) {     classe = 3;     area = b * c / 2; } else {     s = (a + b + c) / 2;     area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );     if (as < bs + cs) {         classe = 4;     } else {         if (as > bs + cs) {             classe = 5;         }     } }  =>   if (true) {     classe = 3;     area = b * c / 2; } else {     s = (a + b + c) / 2;     area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );     if (as < bs + cs) {         classe = 4;     } else {         if (as > bs + cs) {             classe = 5;         }     } }
+SDL_18:35:int_triangulo(int,int,int): s = (a + b + c) / 2; area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) ); if (as < bs + cs) {     classe = 4; } else {     if (as > bs + cs) {         classe = 5;     } }  =>   area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) ); if (as < bs + cs) {     classe = 4; } else {     if (as > bs + cs) {         classe = 5;     } }
+SDL_19:35:int_triangulo(int,int,int): s = (a + b + c) / 2; area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) ); if (as < bs + cs) {     classe = 4; } else {     if (as > bs + cs) {         classe = 5;     } }  =>   s = (a + b + c) / 2; if (as < bs + cs) {     classe = 4; } else {     if (as > bs + cs) {         classe = 5;     } }
+SDL_20:29:int_triangulo(int,int,int): s = (a + b + c) / 2; area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) ); if (as < bs + cs) {     classe = 4; } else {     if (as > bs + cs) {         classe = 5;     } }  =>   s = (a + b + c) / 2; area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );
+SDL_21:30:int_triangulo(int,int,int): classe = 4;  =>  
+SDL_22:36:int_triangulo(int,int,int): if (as < bs + cs) {     classe = 4; } else {     if (as > bs + cs) {         classe = 5;     } }  =>   if (true) {     classe = 4; } else {     if (as > bs + cs) {         classe = 5;     } }
+SDL_23:32:int_triangulo(int,int,int): if (as > bs + cs) {     classe = 5; }  =>  
+SDL_24:33:int_triangulo(int,int,int): classe = 5;  =>  
+SDL_25:35:int_triangulo(int,int,int): if (as > bs + cs) {     classe = 5; }  =>   if (true) {     classe = 5; }
+SDL_26:40:int_triangulo(int,int,int): classe = 1; area = a * a * Math.sqrt( 3 ) / 4;  =>   area = a * a * Math.sqrt( 3 ) / 4;
+SDL_27:40:int_triangulo(int,int,int): classe = 1; area = a * a * Math.sqrt( 3 ) / 4;  =>   classe = 1;
+SDL_28:48:int_triangulo(int,int,int): if (a == b && b == c) {     classe = 1;     area = a * a * Math.sqrt( 3 ) / 4; } else {     classe = 2;     if (a == b || a == c || b == c) {         s = a + b + c / 2;         area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );     } }  =>   if (true) {     classe = 1;     area = a * a * Math.sqrt( 3 ) / 4; } else {     classe = 2;     if (a == b || a == c || b == c) {         s = a + b + c / 2;         area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );     } }
+SDL_29:46:int_triangulo(int,int,int): classe = 2; if (a == b || a == c || b == c) {     s = a + b + c / 2;     area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) ); }  =>   if (a == b || a == c || b == c) {     s = a + b + c / 2;     area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) ); }
+SDL_30:43:int_triangulo(int,int,int): classe = 2; if (a == b || a == c || b == c) {     s = a + b + c / 2;     area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) ); }  =>   classe = 2;
+SDL_31:45:int_triangulo(int,int,int): s = a + b + c / 2; area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );  =>   area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );
+SDL_32:45:int_triangulo(int,int,int): s = a + b + c / 2; area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) );  =>   s = a + b + c / 2;
+SDL_33:47:int_triangulo(int,int,int): if (a == b || a == c || b == c) {     s = a + b + c / 2;     area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) ); }  =>   if (true) {     s = a + b + c / 2;     area = Math.sqrt( s * ((s - a) * ((s - b) * (s - c))) ); }
+SDL_34:55:int_triangulo(int,int,int): return classe;  =>   return 0;
+VDL_1:15:int_triangulo(int,int,int):a < b => b
+VDL_2:15:int_triangulo(int,int,int):a < b => a
+VDL_3:15:int_triangulo(int,int,int):a < c => c
+VDL_4:15:int_triangulo(int,int,int):a < c => a
+VDL_5:15:int_triangulo(int,int,int):b < c => c
+VDL_6:15:int_triangulo(int,int,int):b < c => b
+VDL_7:18:int_triangulo(int,int,int):b + c => c
+VDL_8:18:int_triangulo(int,int,int):b + c => b
+VDL_9:18:int_triangulo(int,int,int):a < b + c => b + c
+VDL_10:18:int_triangulo(int,int,int):a + c => c
+VDL_11:18:int_triangulo(int,int,int):a + c => a
+VDL_12:18:int_triangulo(int,int,int):b < a + c => a + c
+VDL_13:18:int_triangulo(int,int,int):a + b => b
+VDL_14:18:int_triangulo(int,int,int):a + b => a
+VDL_15:18:int_triangulo(int,int,int):c < a + b => a + b
+VDL_16:19:int_triangulo(int,int,int):a != b => b
+VDL_17:19:int_triangulo(int,int,int):a != b => a
+VDL_18:19:int_triangulo(int,int,int):b != c => c
+VDL_19:19:int_triangulo(int,int,int):b != c => b
+VDL_20:20:int_triangulo(int,int,int):a * a => a
+VDL_21:20:int_triangulo(int,int,int):a * a => a
+VDL_22:21:int_triangulo(int,int,int):b * b => b
+VDL_23:21:int_triangulo(int,int,int):b * b => b
+VDL_24:22:int_triangulo(int,int,int):c * c => c
+VDL_25:22:int_triangulo(int,int,int):c * c => c
+VDL_26:23:int_triangulo(int,int,int):bs + cs => cs
+VDL_27:23:int_triangulo(int,int,int):bs + cs => bs
+VDL_28:23:int_triangulo(int,int,int):as == bs + cs => bs + cs
+VDL_29:25:int_triangulo(int,int,int):b * c => c
+VDL_30:25:int_triangulo(int,int,int):b * c => b
+VDL_31:27:int_triangulo(int,int,int):a + b => b
+VDL_32:27:int_triangulo(int,int,int):a + b => a
+VDL_33:27:int_triangulo(int,int,int):a + b + c => a + b
+VDL_34:28:int_triangulo(int,int,int):s - a => a
+VDL_35:28:int_triangulo(int,int,int):s - a => s
+VDL_36:28:int_triangulo(int,int,int):s - b => b
+VDL_37:28:int_triangulo(int,int,int):s - b => s
+VDL_38:28:int_triangulo(int,int,int):s - c => c
+VDL_39:28:int_triangulo(int,int,int):s - c => s
+VDL_40:28:int_triangulo(int,int,int):s * ((s - a) * ((s - b) * (s - c))) => (s - a) * ((s - b) * (s - c))
+VDL_41:29:int_triangulo(int,int,int):bs + cs => cs
+VDL_42:29:int_triangulo(int,int,int):bs + cs => bs
+VDL_43:29:int_triangulo(int,int,int):as < bs + cs => bs + cs
+VDL_44:32:int_triangulo(int,int,int):bs + cs => cs
+VDL_45:32:int_triangulo(int,int,int):bs + cs => bs
+VDL_46:32:int_triangulo(int,int,int):as > bs + cs => bs + cs
+VDL_47:38:int_triangulo(int,int,int):a == b => b
+VDL_48:38:int_triangulo(int,int,int):a == b => a
+VDL_49:38:int_triangulo(int,int,int):b == c => c
+VDL_50:38:int_triangulo(int,int,int):b == c => b
+VDL_51:40:int_triangulo(int,int,int):a * a => a
+VDL_52:40:int_triangulo(int,int,int):a * a => a
+VDL_53:43:int_triangulo(int,int,int):a == b => b
+VDL_54:43:int_triangulo(int,int,int):a == b => a
+VDL_55:43:int_triangulo(int,int,int):a == c => c
+VDL_56:43:int_triangulo(int,int,int):a == c => a
+VDL_57:43:int_triangulo(int,int,int):b == c => c
+VDL_58:43:int_triangulo(int,int,int):b == c => b
+VDL_59:44:int_triangulo(int,int,int):a + b => b
+VDL_60:44:int_triangulo(int,int,int):a + b => a
+VDL_61:44:int_triangulo(int,int,int):c / 2 => 2
+VDL_62:45:int_triangulo(int,int,int):s - a => a
+VDL_63:45:int_triangulo(int,int,int):s - a => s
+VDL_64:45:int_triangulo(int,int,int):s - b => b
+VDL_65:45:int_triangulo(int,int,int):s - b => s
+VDL_66:45:int_triangulo(int,int,int):s - c => c
+VDL_67:45:int_triangulo(int,int,int):s - c => s
+VDL_68:45:int_triangulo(int,int,int):s * ((s - a) * ((s - b) * (s - c))) => (s - a) * ((s - b) * (s - c))
+ODL_1:9:int_triangulo(int,int,int):-2 => 2
+ODL_2:15:int_triangulo(int,int,int):a < b => a
+ODL_3:15:int_triangulo(int,int,int):a < b => b
+ODL_4:15:int_triangulo(int,int,int):a < c => a
+ODL_5:15:int_triangulo(int,int,int):a < c => c
+ODL_6:15:int_triangulo(int,int,int):a < b || a < c => a < b
+ODL_7:15:int_triangulo(int,int,int):a < b || a < c => a < c
+ODL_8:15:int_triangulo(int,int,int):b < c => b
+ODL_9:15:int_triangulo(int,int,int):b < c => c
+ODL_10:15:int_triangulo(int,int,int):a < b || a < c || b < c => a < b || a < c
+ODL_11:15:int_triangulo(int,int,int):a < b || a < c || b < c => b < c
+ODL_12:16:int_triangulo(int,int,int):-1 => 1
+ODL_13:18:int_triangulo(int,int,int):b + c => b
+ODL_14:18:int_triangulo(int,int,int):b + c => c
+ODL_15:18:int_triangulo(int,int,int):a < b + c => a
+ODL_16:18:int_triangulo(int,int,int):a < b + c => b + c
+ODL_17:18:int_triangulo(int,int,int):a + c => a
+ODL_18:18:int_triangulo(int,int,int):a + c => c
+ODL_19:18:int_triangulo(int,int,int):b < a + c => b
+ODL_20:18:int_triangulo(int,int,int):b < a + c => a + c
+ODL_21:18:int_triangulo(int,int,int):a < b + c && b < a + c => a < b + c
+ODL_22:18:int_triangulo(int,int,int):a < b + c && b < a + c => b < a + c
+ODL_23:18:int_triangulo(int,int,int):a + b => a
+ODL_24:18:int_triangulo(int,int,int):a + b => b
+ODL_25:18:int_triangulo(int,int,int):c < a + b => c
+ODL_26:18:int_triangulo(int,int,int):c < a + b => a + b
+ODL_27:18:int_triangulo(int,int,int):a < b + c && b < a + c && c < a + b => a < b + c && b < a + c
+ODL_28:18:int_triangulo(int,int,int):a < b + c && b < a + c && c < a + b => c < a + b
+ODL_29:19:int_triangulo(int,int,int):a != b => a
+ODL_30:19:int_triangulo(int,int,int):a != b => b
+ODL_31:19:int_triangulo(int,int,int):b != c => b
+ODL_32:19:int_triangulo(int,int,int):b != c => c
+ODL_33:19:int_triangulo(int,int,int):a != b && b != c => a != b
+ODL_34:19:int_triangulo(int,int,int):a != b && b != c => b != c
+ODL_35:20:int_triangulo(int,int,int):a * a => a
+ODL_36:20:int_triangulo(int,int,int):a * a => a
+ODL_37:21:int_triangulo(int,int,int):b * b => b
+ODL_38:21:int_triangulo(int,int,int):b * b => b
+ODL_39:22:int_triangulo(int,int,int):c * c => c
+ODL_40:22:int_triangulo(int,int,int):c * c => c
+ODL_41:23:int_triangulo(int,int,int):bs + cs => bs
+ODL_42:23:int_triangulo(int,int,int):bs + cs => cs
+ODL_43:23:int_triangulo(int,int,int):as == bs + cs => as
+ODL_44:23:int_triangulo(int,int,int):as == bs + cs => bs + cs
+ODL_45:25:int_triangulo(int,int,int):b * c => b
+ODL_46:25:int_triangulo(int,int,int):b * c => c
+ODL_47:25:int_triangulo(int,int,int):b * c / 2 => b * c
+ODL_48:25:int_triangulo(int,int,int):b * c / 2 => 2
+ODL_49:27:int_triangulo(int,int,int):a + b => a
+ODL_50:27:int_triangulo(int,int,int):a + b => b
+ODL_51:27:int_triangulo(int,int,int):a + b + c => a + b
+ODL_52:27:int_triangulo(int,int,int):a + b + c => c
+ODL_53:27:int_triangulo(int,int,int):(a + b + c) / 2 => a + b + c
+ODL_54:27:int_triangulo(int,int,int):(a + b + c) / 2 => 2
+ODL_55:28:int_triangulo(int,int,int):s - a => s
+ODL_56:28:int_triangulo(int,int,int):s - a => a
+ODL_57:28:int_triangulo(int,int,int):s - b => s
+ODL_58:28:int_triangulo(int,int,int):s - b => b
+ODL_59:28:int_triangulo(int,int,int):s - c => s
+ODL_60:28:int_triangulo(int,int,int):s - c => c
+ODL_61:28:int_triangulo(int,int,int):(s - b) * (s - c) => s - b
+ODL_62:28:int_triangulo(int,int,int):(s - b) * (s - c) => s - c
+ODL_63:28:int_triangulo(int,int,int):(s - a) * ((s - b) * (s - c)) => s - a
+ODL_64:28:int_triangulo(int,int,int):(s - a) * ((s - b) * (s - c)) => (s - b) * (s - c)
+ODL_65:28:int_triangulo(int,int,int):s * ((s - a) * ((s - b) * (s - c))) => s
+ODL_66:28:int_triangulo(int,int,int):s * ((s - a) * ((s - b) * (s - c))) => (s - a) * ((s - b) * (s - c))
+ODL_67:29:int_triangulo(int,int,int):bs + cs => bs
+ODL_68:29:int_triangulo(int,int,int):bs + cs => cs
+ODL_69:29:int_triangulo(int,int,int):as < bs + cs => as
+ODL_70:29:int_triangulo(int,int,int):as < bs + cs => bs + cs
+ODL_71:32:int_triangulo(int,int,int):bs + cs => bs
+ODL_72:32:int_triangulo(int,int,int):bs + cs => cs
+ODL_73:32:int_triangulo(int,int,int):as > bs + cs => as
+ODL_74:32:int_triangulo(int,int,int):as > bs + cs => bs + cs
+ODL_75:38:int_triangulo(int,int,int):a == b => a
+ODL_76:38:int_triangulo(int,int,int):a == b => b
+ODL_77:38:int_triangulo(int,int,int):b == c => b
+ODL_78:38:int_triangulo(int,int,int):b == c => c
+ODL_79:38:int_triangulo(int,int,int):a == b && b == c => a == b
+ODL_80:38:int_triangulo(int,int,int):a == b && b == c => b == c
+ODL_81:40:int_triangulo(int,int,int):a * a => a
+ODL_82:40:int_triangulo(int,int,int):a * a => a
+ODL_83:40:int_triangulo(int,int,int):a * a * Math.sqrt( 3 ) => a * a
+ODL_84:40:int_triangulo(int,int,int):a * a * Math.sqrt( 3 ) => Math.sqrt( 3 )
+ODL_85:40:int_triangulo(int,int,int):a * a * Math.sqrt( 3 ) / 4 => a * a * Math.sqrt( 3 )
+ODL_86:40:int_triangulo(int,int,int):a * a * Math.sqrt( 3 ) / 4 => 4
+ODL_87:43:int_triangulo(int,int,int):a == b => a
+ODL_88:43:int_triangulo(int,int,int):a == b => b
+ODL_89:43:int_triangulo(int,int,int):a == c => a
+ODL_90:43:int_triangulo(int,int,int):a == c => c
+ODL_91:43:int_triangulo(int,int,int):a == b || a == c => a == b
+ODL_92:43:int_triangulo(int,int,int):a == b || a == c => a == c
+ODL_93:43:int_triangulo(int,int,int):b == c => b
+ODL_94:43:int_triangulo(int,int,int):b == c => c
+ODL_95:43:int_triangulo(int,int,int):a == b || a == c || b == c => a == b || a == c
+ODL_96:43:int_triangulo(int,int,int):a == b || a == c || b == c => b == c
+ODL_97:44:int_triangulo(int,int,int):a + b => a
+ODL_98:44:int_triangulo(int,int,int):a + b => b
+ODL_99:44:int_triangulo(int,int,int):c / 2 => c
+ODL_100:44:int_triangulo(int,int,int):c / 2 => 2
+ODL_101:44:int_triangulo(int,int,int):a + b + c / 2 => a + b
+ODL_102:44:int_triangulo(int,int,int):a + b + c / 2 => c / 2
+ODL_103:45:int_triangulo(int,int,int):s - a => s
+ODL_104:45:int_triangulo(int,int,int):s - a => a
+ODL_105:45:int_triangulo(int,int,int):s - b => s
+ODL_106:45:int_triangulo(int,int,int):s - b => b
+ODL_107:45:int_triangulo(int,int,int):s - c => s
+ODL_108:45:int_triangulo(int,int,int):s - c => c
+ODL_109:45:int_triangulo(int,int,int):(s - b) * (s - c) => s - b
+ODL_110:45:int_triangulo(int,int,int):(s - b) * (s - c) => s - c
+ODL_111:45:int_triangulo(int,int,int):(s - a) * ((s - b) * (s - c)) => s - a
+ODL_112:45:int_triangulo(int,int,int):(s - a) * ((s - b) * (s - c)) => (s - b) * (s - c)
+ODL_113:45:int_triangulo(int,int,int):s * ((s - a) * ((s - b) * (s - c))) => s
+ODL_114:45:int_triangulo(int,int,int):s * ((s - a) * ((s - b) * (s - c))) => (s - a) * ((s - b) * (s - c))
+CDL_1:9:int_triangulo(int,int,int):-2 =>  
+CDL_2:16:int_triangulo(int,int,int):-1 =>  
+CDL_3:25:int_triangulo(int,int,int):b * c / 2 => b * c
+CDL_4:27:int_triangulo(int,int,int):(a + b + c) / 2 => a + b + c
+CDL_5:40:int_triangulo(int,int,int):a * a * Math.sqrt( 3 ) / 4 => a * a * Math.sqrt( 3 )
+CDL_6:44:int_triangulo(int,int,int):c / 2 => c

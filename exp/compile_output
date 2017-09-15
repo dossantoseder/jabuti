@@ -1,0 +1,6 @@
+C:\Users\Thamires\workspace\Integracao\exp\result\Triangulo\traditional_mutants\int_triangulo(int,int,int)\VDL_9\Triangulo.java:18: error: bad operand types for binary operator '&&'
+            if (b + c && b < a + c && c < a + b) {
+                      ^
+  first type:  int
+  second type: boolean
+1 error
