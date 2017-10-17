@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
+import airtesting.wekautil.arff.ARFFGenerateCluster;
 import weka.core.*;
 import weka.*;
 import weka.clusterers.ClusterEvaluation;
@@ -26,7 +27,7 @@ public class ClusterDBScan {
 		eval.setClusterer(DBSCAN);
 		eval.evaluateClusterer(iData);
 		
-		writerARFF(eval);
+		ARFFGenerateCluster.writerARFF(iData, eval, "C:/weka/airtesting_DBSCAN.arff");
 		System.out.println(eval.clusterResultsToString());
 
 	}
