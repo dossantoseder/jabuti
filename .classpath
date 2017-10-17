@@ -12,5 +12,7 @@
 	<classpathentry kind="lib" path="mujava.jar"/>
 	<classpathentry kind="lib" path="openjava.jar"/>
 	<classpathentry kind="lib" path="tools.jar"/>
+	<classpathentry kind="lib" path="lib/java-cup-0.11a.jar"/>
+	<classpathentry kind="lib" path="lib/weka-stable-3.6.10.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

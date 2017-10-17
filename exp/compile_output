@@ -1,6 +1,6 @@
-C:\Users\Thamires\workspace\Integracao\exp\result\Triangulo\traditional_mutants\int_triangulo(int,int,int)\VDL_9\Triangulo.java:18: error: bad operand types for binary operator '&&'
-            if (b + c && b < a + c && c < a + b) {
-                      ^
+C:\Users\Eder.santos\workspace\Jabuti\exp\result\Piramide\traditional_mutants\int_piramide(int,int,int,int,int,int)\VDL_9\Piramide.java:10: error: bad operand types for binary operator '&&'
+        if (base1 > 0 && base1 <= 15 && (base2 > 0 && base2 <= 15) && (base3 > 0 && base3 <= 15) && (l1 > 0 && l1 <= 15) && (0 && l2 <= 15) && (l3 > 0 && l3 <= 15)) {
+                                                                                                                               ^
   first type:  int
   second type: boolean
 1 error

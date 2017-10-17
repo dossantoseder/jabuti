@@ -29,7 +29,7 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.Vector;
 
-import mujava.results.ScoreResultsExecution;
+import mujava.results.ResultsMutantsExecution;
 import mujava.test.*;
 import mujava.util.*;
 
@@ -81,13 +81,10 @@ public class TestExecuter {
   Map<String, String> finalTestResults = new HashMap<String, String>();
   //results as to how many tests can kill each single mutant  
   Map<String, String> finalMutantResults = new HashMap<String, String>();
-  
-//results as to how many mutants are live by each test  
-  Map<String, String> finalTestliveResults = new HashMap<String, String>();
-//results as to how many mutants are live by each test  
+  //calcula mutantes mortos por casos de teste
+  Map<String, String> mutantCaseResults = new HashMap<String, String>();
   Map<String, String> testCasesGenerated = new HashMap<String, String>();
   
-
   public TestExecuter(String targetClassName) {
 
     int index = targetClassName.lastIndexOf(".");
@@ -276,7 +273,6 @@ public class TestExecuter {
                 		originalResults.put(testCases[k].getName(), "pass");
                 		junitTests.add(testCases[k].getName());
                 		finalTestResults.put(testCases[k].getName(), "");
-                		finalTestliveResults.put(testCases[k].getName(), "");
                 		testCasesGenerated.put(testCases[k].getName(), testCases[k].getName());
                 		continue;
                 	}
@@ -476,15 +472,14 @@ public class TestExecuter {
       //determine whether a mutant is killed or not
       //update the test report
       boolean sign = false;
+      String name = null;
       for(int k = 0;k < junitTests.size();k++){
-    	  String name = junitTests.get(k);	  
+    	  name = junitTests.get(k);	  
     	  if(!mutantResults.get(name).equals(originalResults.get(name))){
     		  sign = true;		  
     		  //update the final results by tests
-    		  if(finalTestResults.get(name).equals("")){
+    		  if(finalTestResults.get(name).equals(""))
     			  finalTestResults.put(name, mutant_name);
-    			  System.out.println(name);
-    		  }
     		  else
     			  finalTestResults.put(name, finalTestResults.get(name) + ", " + mutant_name);
     		  //update the final results by mutants
@@ -493,17 +488,11 @@ public class TestExecuter {
     		  else
     			  finalMutantResults.put(mutant_name, finalMutantResults.get(mutant_name) + ", " + name);
     	  }
-    	  else{
-    		//update the final results by tests...
-    		  if(finalTestliveResults.get(name).equals(""))
-    			  finalTestliveResults.put(name, mutant_name);
-    		  else
-    			  finalTestliveResults.put(name, finalTestliveResults.get(name) + ", " + mutant_name);
-    	  }
       }
-      if(sign == true)
+      if(sign == true){
 		  tr.killed_mutants.add(mutant_name);
-	  else
+		  //mutantCaseResults.put(mutant_name, mutant_name);
+      }else
 		  tr.live_mutants.add(mutant_name);
       
       
@@ -536,7 +525,10 @@ public class TestExecuter {
     }
     System.out.println("test report: " + finalTestResults);
     System.out.println("mutant report: " + finalMutantResults);
-    ScoreResultsExecution score = new  ScoreResultsExecution(finalTestResults, finalTestliveResults, testCasesGenerated);
+    System.out.println("Num total: " + finalTestResults.size());
+    System.out.println("Num MUtantes: " + tr.killed_mutants.size());
+    
+    ResultsMutantsExecution ScoreResultsExecution = new ResultsMutantsExecution(finalTestResults, testCasesGenerated , tr.killed_mutants);
     return tr;
   }
 

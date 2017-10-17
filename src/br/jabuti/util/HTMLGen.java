@@ -49,7 +49,7 @@ import br.jabuti.project.ClassMethod;
 import br.jabuti.project.JabutiProject;
 import br.jabuti.project.TestCase;
 import br.jabuti.project.TestSet;
-import br.jabuti.results.HashMapGen;
+import br.jabuti.results.ResultsCriteriaExecution;
 
 public class HTMLGen {
 	private static Document htmlDoc;
@@ -427,7 +427,7 @@ public class HTMLGen {
 	 * @return a DOM Document representing the generated HTML file
 	 */
     public static Document testCaseHTMLReport( TestCase tc, Element body ) {
-    	HashMapGen hm = new HashMapGen();
+    	ResultsCriteriaExecution hm = new ResultsCriteriaExecution();
     	//Modificado 11/09/2017 - Ana
 	    Element h2 = htmlDoc.createElement("H2");
 
