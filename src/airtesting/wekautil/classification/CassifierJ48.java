@@ -9,7 +9,7 @@ public class CassifierJ48 {
 
 	public static void main(String[] args) throws Exception {
 		// Carregando base(arquivo ARFF) de flores íris .
-		FileReader reader = new FileReader("C:/weka/iris.arff");
+		FileReader reader = new FileReader("C:/weka/kmeans.arff");
 		Instances instâncias = new Instances(reader);
 		instâncias.setClassIndex(4);
 

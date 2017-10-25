@@ -6,13 +6,18 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Map;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map.Entry;
+
+import airtesting.wekautil.clustering.RemoveAttributes;
+
+import java.util.TreeMap;
 
 import weka.core.*;
 
 public class CreateArtificialARFF {
-
 	private Instances relation;
 	private Instance intanceData;
 	private FastVector vCasesTest;
@@ -43,12 +48,14 @@ public class CreateArtificialARFF {
 	private Attribute EDGES;
 	private Attribute USES;
 	private Attribute PUSES;
-	//public static Map<String, Map<String, Double>> resultsJabuti = new HashMap<String, Map<String, Double>>();
-	//public static Map<String, Map<String, Double>> resultsMujava = new HashMap<String, Map<String, Double>>();
-	public static Map<String, Map<String, Double>> dataresultsJanutiMujava = new HashMap<String, Map<String, Double>>();
+	// public static Map<String, Map<String, Double>> resultsJabuti = new
+	// HashMap<String, Map<String, Double>>();
+	// public static Map<String, Map<String, Double>> resultsMujava = new
+	// HashMap<String, Map<String, Double>>();
+	public static Map<String, Map<String, Double>> dataresultsJanutiMujava = new TreeMap<String, Map<String, Double>>();
 
+	//public void creatorRelation(String nomeRelação, String[] addAtributos) {
 	public void creatorRelation(String nomeRelação) {
-
 		// Define dados da relação
 		attributes = new FastVector();
 
@@ -71,7 +78,7 @@ public class CreateArtificialARFF {
 
 		// Define relação
 		this.relation = new Instances(nomeRelação, attributes, 0);
-		Map<String, String> operadoreExistentes = new HashMap<String, String>();
+		//Map<String, String> operadoreExistentes = new HashMap<String, String>();
 		for (Entry<String, Map<String, Double>> kv : dataresultsJanutiMujava.entrySet()) {
 			this.intanceData = new Instance(this.relation.numAttributes());
 			this.intanceData.setValue(this.casesTest, kv.getKey());
@@ -136,7 +143,7 @@ public class CreateArtificialARFF {
 		this.attributes.addElement(this.LOR);
 		this.attributes.addElement(this.ASRS);
 		this.attributes.addElement(this.ODL);
-		//Critério
+		// Critério
 		this.attributes.addElement(this.NOS);
 		this.attributes.addElement(this.EDGES);
 		this.attributes.addElement(this.USES);

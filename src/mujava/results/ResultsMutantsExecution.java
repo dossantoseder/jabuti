@@ -10,10 +10,10 @@ import airtesting.wekautil.arff.CreateArtificialARFF;
 public class ResultsMutantsExecution {
 	private Map<String, String> finalTestResults;
 	private Map<String, String> testCasesGenerated;
-	private Map<String, String> operadorMap;
+	//private Map<String, String> operadorMap;
 	private static Map<String, Integer> operadorKilled = new HashMap<String, Integer>();
 	private Vector<String> killedMutants;
-	private CreateArtificialARFF createArtificialARFF;
+	//private CreateArtificialARFF createArtificialARFF;
 	private Map<String, Map<String, Double>> testOperation = new HashMap<String, Map<String, Double>>();
 	private String[] operadores = { "AORB", "AORS", "AOIU", "AOIS", "AODU", "AODS", "ROR", "COR", "COD", "COI", "SOR",
 			"LOR", "LOI", "LOD", "ASRS", "SDL", "VDL", "CDL", "ODL", "PUSES", "EDGES", "NOS", "USES"};
@@ -50,8 +50,8 @@ public class ResultsMutantsExecution {
 	
 	public void populationCriterion(Map<String, Map<String, Double>> resultsMujava) {
 		Map<String, Double> mapInternal;
-		int contCase = 1;
-		String nameCase= "000" ;
+		//int contCase = 1;
+		//String nameCase= "000" ;
 		
 		for (Entry<String, Map<String, Double>> keyExternal : resultsMujava.entrySet()) {
 			mapInternal = new HashMap<String, Double>();
@@ -63,8 +63,9 @@ public class ResultsMutantsExecution {
 			/*System.out.println("Casos"+keyExternal.getKey());
 			System.out.println(nameCase+contCase);*/
 			
-			CreateArtificialARFF.dataresultsJanutiMujava.put(nameCase+contCase, mapInternal);
-			contCase = contCase + 1;
+			//CreateArtificialARFF.dataresultsJanutiMujava.put(nameCase+contCase, mapInternal);
+			CreateArtificialARFF.dataresultsJanutiMujava.put(keyExternal.getKey(), mapInternal);
+			//contCase = contCase + 1;
 			
 		}
 	}
@@ -109,6 +110,7 @@ public class ResultsMutantsExecution {
 		 * "KEY: " + keyI + " Percentual: " + valorOperatioValue.get(keyI)); }
 		 */
 
+		//return completaOperatioValue(valorOperatioValue);
 		return completaOperatioValue(valorOperatioValue);
 	}
 
